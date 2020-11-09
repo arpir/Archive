@@ -1,0 +1,890 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>67个 AE 技巧 | 笔记 | 狐又</title>
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+<style type="text/css">
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+</style>
+<style type="text/css">
+pre.line-numbers {
+	position: relative;
+	padding-left: 3.8em;
+	counter-reset: linenumber;
+}
+
+pre.line-numbers > code {
+	position: relative;
+}
+
+.line-numbers .line-numbers-rows {
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	font-size: 100%;
+	left: -3.8em;
+	width: 3em; /* works for line-numbers below 1000 lines */
+	letter-spacing: -1px;
+	border-right: 1px solid #999;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
+	.line-numbers-rows > span {
+		pointer-events: none;
+		display: block;
+		counter-increment: linenumber;
+	}
+
+		.line-numbers-rows > span:before {
+			content: counter(linenumber);
+			color: #999;
+			display: block;
+			padding-right: 0.8em;
+			text-align: right;
+		}
+</style>
+</head>
+<body>
+
+<h2>小提示</h2>
+<ul>
+	<li>Tip 1： 以下所有快捷键，若无特别标注，Command键对应 Windows 端的 Ctrl；</li>
+    <li>Tip 2：采用的软件为 Adobe After Effects CC 2015，部分功能为新增功能，老版本上可能没有；</li>
+</ul>
+
+</br>
+<h1 align="center">第一部分：20个 AE 技巧</h1>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>描述</th>
+<th>操作方法</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>关键帧速度</td>
+<td><code>Ctrl-Alt-K</code>/<code>Command-Shift-K</code> 调节进入速度和输出速度，可以快速实现生动的<em>缓动</em>的功能；  用<code>Command-Alt-K</code>可以调出<em>关键帧插值</em>窗口；</td>
+</tr>
+<tr>
+<td>2</td>
+<td>迷你流程图</td>
+<td>在时间轴按<code>Tab</code>可以唤出迷你流程图；</td>
+</tr>
+<tr>
+<td>3</td>
+<td>对齐</td>
+<td>从窗口菜单可以打开<code>对齐</code>选项；</td>
+</tr>
+<tr>
+<td>4</td>
+<td>替换所选项目的源</td>
+<td>选中你要替换的那一层，按住 Alt 然后将图像素材拖动到任意位置均可。这会保留原素材的所有属性，仅仅替换素材来源；</td>
+</tr>
+<tr>
+<td>5</td>
+<td>使用系统调色盘</td>
+<td><code>首选项-&gt;通用-&gt;使用系统调色盘</code>；</td>
+</tr>
+<tr>
+<td>6</td>
+<td>渲染预设</td>
+<td>在输出模块右边的小三角形右击，选择<code>创建模板</code>，然后就可以选择多个渲染，再次左键点击小三角，设置为同一个渲染预设；</td>
+</tr>
+<tr>
+<td>7</td>
+<td>循环蒙版颜色</td>
+<td>使每次的遮罩（蒙版）颜色都不一样，便于区分：<code>首选项-&gt;外观-&gt;循环蒙版颜色</code></td>
+</tr>
+<tr>
+<td>8</td>
+<td>数学公式</td>
+<td>在 AE 的各个输入<code>数值窗口</code>中，都可以直接输入<code>数学算式</code>（类似于 720/5、320*3、300+10）等等；</td>
+</tr>
+<tr>
+<td>9</td>
+<td>渐变遮罩</td>
+<td>通常创建渐变使用的<code>渐变梯度</code>动画预设只有两个可选颜色，而在图层上<code>右键-&gt;图层样式-&gt;渐变遮罩</code>的话，就有多得多的选择；</td>
+</tr>
+<tr>
+<td>10</td>
+<td>翻转关键帧</td>
+<td>最常见的方法就是选中所有的关键帧，右键-&gt;关键帧辅助-&gt;时间反向关键帧；</td>
+</tr>
+<tr>
+<td>11</td>
+<td>将表达式转换为关键帧</td>
+<td>写完表达式后，新建一个关键帧，右键-&gt;关键帧辅助-&gt;将表达式转换为关键帧；</td>
+</tr>
+<tr>
+<td>12</td>
+<td>拆分图层</td>
+<td><code>Ctrl-Shift-D</code>/<code>Command-Shift-D</code>将图层从当前游标处分割；</td>
+</tr>
+<tr>
+<td>13</td>
+<td>参考线图层</td>
+<td>如果你有一些信息想显示在画面上（例如作为注释），但不希望它们在最终的渲染中被导出，那么可以选中图层-&gt;右键-&gt;参考线图层</td>
+</tr>
+<tr>
+<td>14</td>
+<td>创建蒙版/路径时移动</td>
+<td>按住<code>空格键</code>即可在创建蒙版/路径的过程中移动蒙版或路径点；</td>
+</tr>
+<tr>
+<td>15</td>
+<td>从蒙版创建运动路径</td>
+<td>选中蒙版图层后点击<code>M</code>，然后复制下<code>蒙版路径</code>属性，再在需要运动的图层的<code>位置</code>属性中复制即可；</td>
+</tr>
+<tr>
+<td>16</td>
+<td>缩放关键帧间距</td>
+<td>选中要调节的关键帧，按住<code>Alt</code>然后拖动任意一端的关键帧；</td>
+</tr>
+<tr>
+<td>17</td>
+<td>复制 Illustrator 的路径到 AE 中</td>
+<td>直接在 AI 里复制，再到 AE 里粘贴即可；</td>
+</tr>
+<tr>
+<td>18</td>
+<td>用快捷键最大化面板</td>
+<td>按<code>~</code>键即可（<code>Tab</code>键上方的按键），再次按键恢复原大小；</td>
+</tr>
+<tr>
+<td>19</td>
+<td>在外部 Media Encoder 中对单独的合成组进行渲染</td>
+<td>直接将合成组拖动到 AME 中即可；</td>
+</tr>
+<tr>
+<td>20</td>
+<td>用快捷键关闭面板</td>
+<td><code>Ctrl-W</code>关闭单个面板，<code>Ctrl-Alt-W</code>关闭所有面板（比如关闭所有打开的图层组）。</td>
+</tr>
+</tbody>
+</table>
+
+
+</br>
+<h1 align="center">第二部分：22个 AE 技巧</h1>
+
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>描述</th>
+<th>操作方法</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>Shift+父层行为</td>
+<td>在添加父层的时候（拉动父层线或直接指定父层），按住<code>Shift</code>键，可以将子层的位置也与父层同步；</td>
+</tr>
+<tr>
+<td>2</td>
+<td>层选择</td>
+<td>选中父层的时候，在层上右键-&gt;选择子项即可将所有子层选中；右键-&gt;选择反向可以反向选择所有的层；</td>
+</tr>
+<tr>
+<td>3</td>
+<td>前往时间线中的可视物件</td>
+<td>用<code>J</code>和<code>K</code>向前/向后选择关键帧；在标记上右键-&gt;前往标记位置；关键帧也同理；</td>
+</tr>
+<tr>
+<td>4</td>
+<td>显示属性</td>
+<td>使用快捷键<code>U</code>来显示/收起所有更改过的属性；另外可以用<code>P</code>（位置）、<code>A</code>（锚点）、<code>S</code>（缩放）、<code>T</code>（不透明度）等快捷键来显示/收起对应的属性；</td>
+</tr>
+<tr>
+<td>5</td>
+<td>在当前时间粘贴图层</td>
+<td>复制的时候按住<code>Alt</code>键，即可；</td>
+</tr>
+<tr>
+<td>6</td>
+<td>关闭其他时间线面板</td>
+<td>在图层组标签右键-&gt;关闭其他图层组面板，即可；</td>
+</tr>
+<tr>
+<td>7</td>
+<td>寻找丢失的素材、效果或是字体</td>
+<td>通常如果想找缺失的素材，在项目窗口搜索“缺失”即可；同时还有其他术语（如”未使用”）可用；不过更快的办法是 文件-&gt;整理工程（文件）-&gt;寻找缺失的素材/效果/字体；</td>
+</tr>
+<tr>
+<td>8</td>
+<td>在资源管理器中显示</td>
+<td>右键找到对应选项即可；</td>
+</tr>
+<tr>
+<td>9</td>
+<td>带有属性链接的拷贝</td>
+<td>在效果控件里用<code>Command-Option-V</code>复制效果，再粘贴到另一个对象上，即可链接两者的属性（会同时变化）；</td>
+</tr>
+<tr>
+<td>10</td>
+<td>居中锚点</td>
+<td>先从标尺拉出两条参考线，交错于对象的中心，然后再用移动锚点工具<code>Y</code>将锚点移动到交叉点；更快的方式是选中<code>对齐</code>，然后直接拖动锚点即可；但这样太麻烦了，可以用快捷键<code>Command-Alt-Fn-左方向键</code>，即<code>Ctrl-Alt-Home</code>；</td>
+</tr>
+<tr>
+<td>11</td>
+<td>居中视图</td>
+<td>按住<code>Command</code>可在移动的时候保持中点对齐，而按<code>Ctrl-Home</code>则可以将轴点对其到画面中心；Mac 上则是<code>Command-Fn-左方向键</code>；</td>
+</tr>
+<tr>
+<td>12</td>
+<td>适应合成大小</td>
+<td><code>Command-Shift-Alt-H</code> 适应宽度；<code>Command-Shift-Alt-G</code> 适应高度；<code>Ctrl-Alt-F</code> 拉伸填充（铺满画面）；快捷键如果记不住，可以在图层上右键-&gt;变换-&gt;适合复合/复合高度/复合宽度；</td>
+</tr>
+<tr>
+<td>13</td>
+<td>弹性蒙版选项</td>
+<td>可以用来做<em>人脸打码</em>什么的……简单说，拖入一段影片，建立一个蒙版，合成模式为<code>相加</code>，在蒙版上右键-&gt;跟踪蒙版，然后在跟踪器（窗口-&gt;跟踪器）里选择好方法，点击分析的播放按钮即可；然后再加一个模糊效果，在效果的属性中，有一个<code>合成选项</code>，点加号，把蒙版加进去，就可以了。如果不调整合成选项的话，那画面上就只剩下蒙版区域了；</td>
+</tr>
+<tr>
+<td>14</td>
+<td>给形状图层做贝塞尔路径</td>
+<td>在往常，创建完形状图层之后没办法针对每个路径点进行调节，而现在如果你在绘制形状之前勾选中<code>贝赛尔曲线路径</code>，那么创建出来的形状可以用钢笔工具进行调节；</td>
+</tr>
+<tr>
+<td>15</td>
+<td>在时间线显示</td>
+<td>在属性中右键某属性，点击<code>在时间线中显示</code>即可快速显示该属性；</td>
+</tr>
+<tr>
+<td>16</td>
+<td>默认渲染设置</td>
+<td>在你设置一个渲染设置时，按住<code>Command</code>，这样在你下次使用<code>Command-Control-M</code></td>
+</tr>
+<tr>
+<td>17</td>
+<td>将当前的工作区域设定为选中图层的长度</td>
+<td>选中图层，按<code>Command-Alt-B</code> 即可；这样就只会渲染你选中的时间区域了，渲染快很多；同时可以搭配<code>合成-&gt;将合成裁剪到工作区</code>使用；</td>
+</tr>
+<tr>
+<td>18</td>
+<td>删除所选图层的所有效果</td>
+<td>传统的方法是在每个图层的效果控件窗口中全选效果、删除，但其实可以选中多个图层，按<code>Command-Shift-E</code>去一次性删除它们的效果；</td>
+</tr>
+<tr>
+<td>19</td>
+<td>关闭所有的其他独奏（SOLO）开关</td>
+<td>按住<code>Alt</code>然后点击某个图层的独奏开关，则其他图层的独奏开关都会被关闭，即变成<em>唯一独奏</em>；顺便，按<code>Command-Alt-Shift-V</code>可以显示/隐藏图层（即左侧的小眼睛）；</td>
+</tr>
+<tr>
+<td>20</td>
+<td>重置旋转与缩放</td>
+<td>双击<code>选择工具</code>，可以恢复初始大小；双击<code>旋转工具</code>，可以恢复初始旋转；</td>
+</tr>
+<tr>
+<td>21</td>
+<td>使用备选设置进行 RAM 预览</td>
+<td>通常按小键盘的<code>0</code>可以 RAM 预览，而在<code>预览窗口</code>可以选择<code>Shift+RAM 预览选项</code>以设置备用选项，这样按<code>Shift-0</code>（或者按住<code>Shift</code>然后点击 <code>RAM 预览按钮</code>）就可以调用该选项进行预览（比如调节不同的帧速率，隔帧播放等等）；</td>
+</tr>
+<tr>
+<td>22</td>
+<td>在 PR 中可实时调节的文字模板</td>
+<td>你可以先在 AE 里做好一个字幕的模板，然后在 PR 中使用，而如果在 AE 中按<code>Command-K</code>调用<code>合成设置</code>窗口，并且在高级选项卡中勾选<code>模板</code>，那么就可以在 PR 中修改模板的文字内容（不用重新打开 AE），方法如下：把合成拖入 PR，点击<code>效果控件</code>，可以看到文字内容的选项，修改即可；</td>
+</tr>
+</tbody>
+</table>
+
+
+</br>
+<h1 align="center">第三部分：25个 AE 技巧</h1>
+
+
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>描述</th>
+<th>操作方法</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>编辑原始</td>
+<td>如果你用 AE 渲染了一个视频文件，那把它拖进 AE 后，按<code>编辑-&gt;编辑原稿</code>，或者快捷键<code>Command-E</code>，就可以重新编辑它的原始工程了！（不过*.aep 文件必须保留）；</td>
+</tr>
+<tr>
+<td>2</td>
+<td>独奏属性</td>
+<td>选中你想要独奏（Solo）的属性，然后快速双击 S 键，即<code>SS</code>，可独奏这些属性（隐藏其他属性）；</td>
+</tr>
+<tr>
+<td>3</td>
+<td>隐藏属性</td>
+<td><code>Alt-Shift-点击属性</code> 即可隐藏你选中的属性；不过一次只能隐藏一个，所以如果需要隐藏的属性比较多，可以选中想留下的属性，让它们独奏（见上一条）；</td>
+</tr>
+<tr>
+<td>4</td>
+<td>记忆/应用解释素材的设置</td>
+<td>如果你有一个片段，帧率为29.97，而你想让好几个片段帧率都变成24 fps，那么可以在影片上<code>右键-&gt;解释素材</code>或是快捷键呼出<code>Command-Alt-G</code>，然后调节匹配帧速率、开始时间码等设置； 设置完一个之后，按<code>Command-Alt-C</code>复制解释设置，然后选中其他几个片段，按<code>Command-ALt-V</code>粘贴上素材解释的设置；</td>
+</tr>
+<tr>
+<td>5</td>
+<td>将帧保存为PS的图层</td>
+<td>很简单，菜单点击<code>合成-&gt;帧另存为-&gt;Photoshop 图层</code>即可；保存下来的文件就是屏幕大小内的各个元素，会按帧分成各个层，与 AE 中的布局相同；</td>
+</tr>
+<tr>
+<td>6</td>
+<td>将PS中的文字变为可编辑文字</td>
+<td>把 psd 文件拖入 AE 后，文字本来是没法编辑的，但只要右键图层（如果不是单独的文字图层的话需要先转为图层合成，再找到文字图层），点击<code>转换为可编辑文字</code>即可；</td>
+</tr>
+<tr>
+<td>7</td>
+<td>将形状图层转换为贝赛尔曲线</td>
+<td>首先创建一个形状，然后在多边形的路径属性上<code>右键-&gt;转换为贝塞尔路径</code>即可，然后就可以编辑每个路径节点了；</td>
+</tr>
+<tr>
+<td>8</td>
+<td>显示所有属性</td>
+<td><code>Command-点击属性的小三角</code>即可显示所有的属性；顺便一提，<code>U</code>是显示所有带关键值/表达式的属性，<code>UU</code>是显示所有更改过的属性；</td>
+</tr>
+<tr>
+<td>9</td>
+<td>设置标记并标序</td>
+<td>按<code>Command-8</code>添加标记；而按<code>Shit-0~9</code>可添加命名为数字0至数字9的标记；如果有重复的同数字标记，会自动替换掉之前那个；</td>
+</tr>
+<tr>
+<td>10</td>
+<td>移除标记</td>
+<td>按住<code>Command</code>然后点击标记，即可快速移除标记；</td>
+</tr>
+<tr>
+<td>11</td>
+<td>在预合成时调整合成长度</td>
+<td>按<code>Command-Shift-C</code>可以进行预合成，但是这样出来的长度将会是整个当前合成的长度，处理起来很麻烦；但勾选中<code>将合成持续时间调整为所选图层的时间范围</code>，出来的预合成就只有原先那些图层范围的长度；</td>
+</tr>
+<tr>
+<td>12</td>
+<td>增加新图层</td>
+<td>以往新增的图层会自动出现在所有图层的最上方，而现在如果先点击一个图层，再新增，那么新图层会出现在当前图层的上方；</td>
+</tr>
+<tr>
+<td>13</td>
+<td>只显示表达式</td>
+<td>选中图层，按<code>EE</code>即可；</td>
+</tr>
+<tr>
+<td>14</td>
+<td>只复制表达式</td>
+<td>如果只想复制表达式，不复制关键帧，可以在属性上<code>右键-&gt;仅复制表达式</code>；</td>
+</tr>
+<tr>
+<td>15</td>
+<td>将不同合成中使用父级绳索</td>
+<td>将两个合成面板拖动出来，然后把其中一个内的图层的父级绳索拖动到另一个面板即可；</td>
+</tr>
+<tr>
+<td>16</td>
+<td>反转父级的属性值</td>
+<td>可以在点开一个属性值的表达式选项（<code>Alt-点击该属性的秒表图标</code>）后，单独拖动该属性值的父级绳索到另一个图层的属性值上，这时候会多出一条表达式，而如果在这个表达式的最后加上<code>*-1</code>，即乘以负一，那么得到的值会完全相反；</td>
+</tr>
+<tr>
+<td>17</td>
+<td>不带警告地删除素材</td>
+<td>按住<code>Command-Del</code>即可直接删除；</td>
+</tr>
+<tr>
+<td>18</td>
+<td>将选中的图层滚动至时间轴面板最顶层</td>
+<td>选中图层，点击<code>X</code>即可。注意，这个并不是把图层移动到顶层，只是在视图上滚动，相当于鼠标滚轮；这个功能用在比较靠下的图层很好用，因为这会在最下面空出一段空白，方便新建等动作；</td>
+</tr>
+<tr>
+<td>19</td>
+<td>保留帧速率</td>
+<td>按<code>Command-K</code>呼出合成设置，你可以在这里调节帧速率——这并不会影响合成本身，当你把它放到新的合成中，它会按照新合成的帧速率播放；但是如果在合成设置的高级选项卡里头勾选了<code>在嵌套时或在渲染队列中保留帧速率</code>那么即使该合成放到了 4fps 的合成中，也能保持流畅；</td>
+</tr>
+<tr>
+<td>20</td>
+<td>选择/取消选择所有的可见关键帧</td>
+<td>如果你想选中所有展开的可见关键帧，<code>Command-ALt-A</code>  即可，这样不会选中其它没有可见关键帧的图层；而按<code>Command-Alt-Shift-A</code>即可取消选择所有的可视关键帧；</td>
+</tr>
+<tr>
+<td>21</td>
+<td>将内容移动到新的文件夹</td>
+<td>在项目面板中选中你要的文件，直接拖动到<code>新建文件夹</code>的图标即可将它们都放到一个新建的文件夹中；合成也同理；</td>
+</tr>
+<tr>
+<td>22</td>
+<td>重置应用窗口以适应屏幕</td>
+<td>按<code>Command-\</code>即可，适应猴可以隐藏掉菜单栏，另外按<code>/</code>可以将视频尺寸缩放为100%，<code>,</code>和<code>.</code>（逗号和句号）可以分别缩放视频尺寸；分号<code>;</code>配合功能键调节时间轴，引号<code>&#39;</code>配合功能键调节屏幕附加信息（安全区、网格等）的显示；</td>
+</tr>
+<tr>
+<td>23</td>
+<td>将合成在面板中居中显示</td>
+<td><code>双击手型工具</code>可以把视频居中到合成面板的中心位置；</td>
+</tr>
+<tr>
+<td>24</td>
+<td>查看选定图层</td>
+<td>这个是摄像机的功能，选择某个图层后，在菜单点击<code>视图-&gt;查看选定图层</code>或是用快捷键<code>Command-Alt-Shift-\</code>即可让摄像机对准选中的图层——正好完全将其容纳在画面内；同理，你也可以选择<code>查看所有图层</code>来让摄像机容纳整个画面；</td>
+</tr>
+<tr>
+<td>25</td>
+<td>设置父级到一个新层</td>
+<td>如果你有很多图层，它们的父级都为图层A，然而你想给他们更换一个父级，比如图层B，那么先将当前的共同父层A的父层设置为图层B，然后把图层A删除，原图层们的父级即会更换为图层B。</td>
+</tr>
+</tbody>
+</table>
+
+</br>
+<div align="center" style="color:#BEBEBE">狐又 / 2015.09.19</div>
+
+
+<script type="text/javascript">
+var _self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{},Prism=function(){var e=/\blang(?:uage)?-(?!\*)(\w+)\b/i,t=_self.Prism={util:{encode:function(e){return e instanceof n?new n(e.type,t.util.encode(e.content),e.alias):"Array"===t.util.type(e)?e.map(t.util.encode):e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).match(/\[object (\w+)\]/)[1]},clone:function(e){var n=t.util.type(e);switch(n){case"Object":var a={};for(var r in e)e.hasOwnProperty(r)&&(a[r]=t.util.clone(e[r]));return a;case"Array":return e.map&&e.map(function(e){return t.util.clone(e)})}return e}},languages:{extend:function(e,n){var a=t.util.clone(t.languages[e]);for(var r in n)a[r]=n[r];return a},insertBefore:function(e,n,a,r){r=r||t.languages;var i=r[e];if(2==arguments.length){a=arguments[1];for(var l in a)a.hasOwnProperty(l)&&(i[l]=a[l]);return i}var o={};for(var s in i)if(i.hasOwnProperty(s)){if(s==n)for(var l in a)a.hasOwnProperty(l)&&(o[l]=a[l]);o[s]=i[s]}return t.languages.DFS(t.languages,function(t,n){n===r[e]&&t!=e&&(this[t]=o)}),r[e]=o},DFS:function(e,n,a){for(var r in e)e.hasOwnProperty(r)&&(n.call(e,r,e[r],a||r),"Object"===t.util.type(e[r])?t.languages.DFS(e[r],n):"Array"===t.util.type(e[r])&&t.languages.DFS(e[r],n,r))}},highlightAll:function(e,n){for(var a,r=document.querySelectorAll('code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'),i=0;a=r[i++];)t.highlightElement(a,e===!0,n)},highlightElement:function(a,r,i){for(var l,o,s=a;s&&!e.test(s.className);)s=s.parentNode;s&&(l=(s.className.match(e)||[,""])[1],o=t.languages[l]),a.className=a.className.replace(e,"").replace(/\s+/g," ")+" language-"+l,s=a.parentNode,/pre/i.test(s.nodeName)&&(s.className=s.className.replace(e,"").replace(/\s+/g," ")+" language-"+l);var u=a.textContent,c={element:a,language:l,grammar:o,code:u};if(u&&(c.code=u.replace(/^(?:\r?\n|\r)/,"")),!u||!o)return t.hooks.run("complete",c),void 0;if(t.hooks.run("before-highlight",c),r&&_self.Worker){var g=new Worker(t.filename);g.onmessage=function(e){c.highlightedCode=n.stringify(JSON.parse(e.data),l),t.hooks.run("before-insert",c),c.element.innerHTML=c.highlightedCode,i&&i.call(c.element),t.hooks.run("after-highlight",c),t.hooks.run("complete",c)},g.postMessage(JSON.stringify({language:c.language,code:c.code}))}else c.highlightedCode=t.highlight(c.code,c.grammar,c.language),t.hooks.run("before-insert",c),c.element.innerHTML=c.highlightedCode,i&&i.call(a),t.hooks.run("after-highlight",c),t.hooks.run("complete",c)},highlight:function(e,a,r){var i=t.tokenize(e,a);return n.stringify(t.util.encode(i),r)},tokenize:function(e,n){var a=t.Token,r=[e],i=n.rest;if(i){for(var l in i)n[l]=i[l];delete n.rest}e:for(var l in n)if(n.hasOwnProperty(l)&&n[l]){var o=n[l];o="Array"===t.util.type(o)?o:[o];for(var s=0;s<o.length;++s){var u=o[s],c=u.inside,g=!!u.lookbehind,f=0,h=u.alias;u=u.pattern||u;for(var p=0;p<r.length;p++){var d=r[p];if(r.length>e.length)break e;if(!(d instanceof a)){u.lastIndex=0;var m=u.exec(d);if(m){g&&(f=m[1].length);var y=m.index-1+f,m=m[0].slice(f),v=m.length,k=y+v,b=d.slice(0,y+1),w=d.slice(k+1),N=[p,1];b&&N.push(b);var O=new a(l,c?t.tokenize(m,c):m,h);N.push(O),w&&N.push(w),Array.prototype.splice.apply(r,N)}}}}}return r},hooks:{all:{},add:function(e,n){var a=t.hooks.all;a[e]=a[e]||[],a[e].push(n)},run:function(e,n){var a=t.hooks.all[e];if(a&&a.length)for(var r,i=0;r=a[i++];)r(n)}}},n=t.Token=function(e,t,n){this.type=e,this.content=t,this.alias=n};if(n.stringify=function(e,a,r){if("string"==typeof e)return e;if("Array"===t.util.type(e))return e.map(function(t){return n.stringify(t,a,e)}).join("");var i={type:e.type,content:n.stringify(e.content,a,r),tag:"span",classes:["token",e.type],attributes:{},language:a,parent:r};if("comment"==i.type&&(i.attributes.spellcheck="true"),e.alias){var l="Array"===t.util.type(e.alias)?e.alias:[e.alias];Array.prototype.push.apply(i.classes,l)}t.hooks.run("wrap",i);var o="";for(var s in i.attributes)o+=s+'="'+(i.attributes[s]||"")+'"';return"<"+i.tag+' class="'+i.classes.join(" ")+'" '+o+">"+i.content+"</"+i.tag+">"},!_self.document)return _self.addEventListener?(_self.addEventListener("message",function(e){var n=JSON.parse(e.data),a=n.language,r=n.code;_self.postMessage(JSON.stringify(t.util.encode(t.tokenize(r,t.languages[a])))),_self.close()},!1),_self.Prism):_self.Prism;var a=document.getElementsByTagName("script");return a=a[a.length-1],a&&(t.filename=a.src,document.addEventListener&&!a.hasAttribute("data-manual")&&document.addEventListener("DOMContentLoaded",t.highlightAll)),_self.Prism}();"undefined"!=typeof module&&module.exports&&(module.exports=Prism);
+</script>
+<script type="text/javascript">
+Prism.hooks.add("complete",function(e){if(e.code){var t=e.element.parentNode,s=/\s*\bline-numbers\b\s*/;if(t&&/pre/i.test(t.nodeName)&&(s.test(t.className)||s.test(e.element.className))&&!e.element.querySelector(".line-numbers-rows")){s.test(e.element.className)&&(e.element.className=e.element.className.replace(s,"")),s.test(t.className)||(t.className+=" line-numbers");var a,n=1+e.code.split("\n").length,l=new Array(n);l=l.join("<span></span>"),a=document.createElement("span"),a.className="line-numbers-rows",a.innerHTML=l,t.hasAttribute("data-start")&&(t.style.counterReset="linenumber "+(parseInt(t.getAttribute("data-start"),10)-1)),e.element.appendChild(a)}}});
+</script>
+</body>
+
+</html>
