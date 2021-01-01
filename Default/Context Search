@@ -1,0 +1,217 @@
+{
+  "VER": "1",
+  "NAME": "搜索 \"%s\"",
+  "TRIGGERKEY": true,
+  "SEARCHENGINES": [
+    {
+      "CATALOG": "🔍",
+      "ID": "微信",
+      "URL": "https://weixin.sogou.com/weixinwap?ie=utf8&s_from=input&type=2&t=&query=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "🔍",
+      "ID": "秘迹",
+      "URL": "https://mijisou.com/?q=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "🔍",
+      "ID": "Naver",
+      "URL": "https://search.naver.com/search.naver?query=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "🔍",
+      "ID": "yandex",
+      "URL": "https://yandex.com/search/?text=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "🔍",
+      "ID": "雅虎",
+      "URL": "http://one.cn.yahoo.com/s?p=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "🔍",
+      "ID": "Google",
+      "URL": "http://www.google.com/search?q=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "⚡️",
+      "ID": "网盘",
+      "URL": "https://www.dashengpan.com/search?keyword=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "⚡️",
+      "ID": "i-Book",
+      "URL": "https://book.tstrs.me/find?q=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "⚡️",
+      "ID": "鸠摩搜书",
+      "URL": "https://www.jiumodiary.com/?=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "⚡️",
+      "ID": "百度地图",
+      "URL": "http://map.baidu.com/?newmap=1&s=con%26wd%3D%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "⚡️",
+      "ID": "APK",
+      "URL": "https://apk4free.net/?s=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "💼",
+      "ID": "Mind",
+      "URL": "https://mm.edrawsoft.cn/community/search/1?keyword=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "💼",
+      "ID": "36氪",
+      "URL": "http://36kr.com/search/articles/%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "💼",
+      "ID": "MBA库",
+      "URL": "https://wiki.mbalib.com/wiki/%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "💼",
+      "ID": "天眼查",
+      "URL": "http://www.tianyancha.com/search?key=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "💼",
+      "ID": "中商数据",
+      "URL": "https://s.askci.com/search/%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "💼",
+      "ID": "199IT",
+      "URL": "http://search.199it.com/?q=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "💼",
+      "ID": "Tradingeconomics",
+      "URL": "http://www.tradingeconomics.com/search.aspx?q=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "📽",
+      "ID": "茶杯🦊",
+      "URL": "https://www.cupfox.com/search?key=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "📽",
+      "ID": "腾讯视频",
+      "URL": "https://v.qq.com/x/search/?q=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "📽",
+      "ID": "译学馆",
+      "URL": "https://www.yxgapp.com/?s=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "📽",
+      "ID": "哔哩哔哩",
+      "URL": "https://search.bilibili.com/all?keyword=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "📽",
+      "ID": "YouTube",
+      "URL": "https://www.youtube.com/results?search_query=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "📽",
+      "ID": "Vimeo",
+      "URL": "https://vimeo.com/search?q=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "📖",
+      "ID": "下厨房",
+      "URL": "http://www.xiachufang.com/search/?keyword=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "📖",
+      "ID": "默沙东医学手册",
+      "URL": "https://www.msdmanuals.com/zh/首页/SearchResults?query=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "📖",
+      "ID": "医学微视",
+      "URL": "https://www.mvyxws.com/index.php/vod/search?key=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "📖",
+      "ID": "萌娘百科",
+      "URL": "https://zh.moegirl.org/index.php?search=%s ",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "📖",
+      "ID": "Google艺术与文化",
+      "URL": "https://google.com/culturalinstitute/browse/%s",
+      "ENCODE": false,
+      "ENABLE": true
+    },
+    {
+      "CATALOG": "📖",
+      "ID": "Magi",
+      "URL": "https://magi.com/search?q=%s",
+      "ENCODE": false,
+      "ENABLE": true
+    }
+  ]
+}

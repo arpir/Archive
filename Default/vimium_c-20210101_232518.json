@@ -1,0 +1,60 @@
+{
+	"name": "Vimium C",
+	"@time": "2021/1/1 下午11:25:18",
+	"time": 1609514718210,
+	"environment": {
+		"extension": "1.87.2",
+		"platform": "mac",
+		"chrome": 87
+	},
+	"autoReduceMotion": true,
+	"clipSub": [
+		"g@^https://www.zhihu.com/question/\\d+(?=/answer/?$)@@r",
+		"p@^https://item.m.jd.com/product/(\\d+).html\\b@https://item.jd.com/$1.html@",
+		""
+	],
+	"exclusionListenHash": false,
+	"exclusionRules": [],
+	"grabBackFocus": true,
+	"keyMappings": [
+		"#自定义快捷键-浏览",
+		"map ` showHelp # 命令列表 #",
+		"map · showHelp\t# 命令列表 #",
+		"map w scrollPageUp # W键 向上滚动一屏 #",
+		"map s scrollPageDown\t# S键 向下滚动一屏 #",
+		"map a scrollLeft\t# A键 向左滚动 #",
+		"map d scrollRight\t# D键 向右滚动 #",
+		"map W scrollToTop\t# ⇧W键 滚动顶部 #",
+		"map S scrollToBottom\t# ⇧S键 滚动底部 #",
+		"map r reload\t# R键 刷新页面 #",
+		"map M Marks.activateCreateMode swap #标记页面#",
+		"map m Marks.activate swap #转跳标记页面#",
+		"map j performFind #查找下一个#",
+		"map k performBackwardsFind #查找上一个#",
+		"",
+		"",
+		"#自定义快捷键-编辑",
+		"map Ct copyCurrentTitle\t#复制当前页面标题#",
+		"map Cu copyCurrentUrl  #复制当前页面网站#",
+		"map ge Vomnibar.activateUrlInNewTab #编辑当前网址并在新标签页打开#",
+		""
+	],
+	"linkHintCharacters": "dsavewrqcxz",
+	"nextPatterns": "下一封,下页,下一页,下一章,后一页,.btn-next,next,more,newer,>,›,→,»,≫,>>",
+	"previousPatterns": "上一封,上页,上一页,上一章,前一页,.btn-prev,prev,previous,back,older,<,‹,←,«,≪,<<",
+	"searchEngines": [
+		"bd|Baidu|百度: https://www.baidu.com/s?ie=utf-8&wd=$s blank=https://www.baidu.com/",
+		"bi|bing|必应: https://www.bing.com/search?q=$s blank=https://cn.bing.com/",
+		"",
+		"pic|谷歌图片: https://www.google.com/search?newwindow=1&tbm=isch&q=$s",
+		"pic|图片|百度图片:https://image.baidu.com/search/index?tn=baiduimage&ie=utf-8&word=$s",
+		"",
+		"dict|词典|必应词典: https://cn.bing.com/dict/?q=$s",
+		"",
+		"xs|百度学术: https://xueshu.baidu.com/s?ie=utf-8&wd=%s blank=https://xueshu.baidu.com",
+		"xs|谷歌学术:  https://scholar.google.com/scholar?hl=zh-CN&q=$s",
+		""
+	],
+	"showActionIcon": false,
+	"vimSync": true
+}

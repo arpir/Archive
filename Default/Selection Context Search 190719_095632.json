@@ -1,0 +1,115 @@
+{
+  "sVersion": "5.18",
+  "websiteList": [
+    {
+      "contexts": [
+        "selection",
+        "page",
+        "frame",
+        "tab"
+      ],
+      "id": 31,
+      "type": "separator"
+    },
+    {
+      "address": "https://www.google.com/search?q=",
+      "contexts": [
+        "selection",
+        "frame",
+        "tab"
+      ],
+      "id": 3,
+      "name": "Google",
+      "popup": true,
+      "prompt": true,
+      "type": "link"
+    },
+    {
+      "address": "https://www.baidu.com/s?wd=",
+      "contexts": [
+        "selection",
+        "frame"
+      ],
+      "id": 59,
+      "name": "百度",
+      "popup": true,
+      "prompt": true,
+      "type": "link"
+    },
+    {
+      "address": "https://weixin.sogou.com/weixinwap?ie=utf8&s_from=input&type=2&t=&query=",
+      "contexts": [
+        "selection"
+      ],
+      "id": 37,
+      "name": "微信搜索",
+      "popup": true,
+      "type": "link"
+    },
+    {
+      "address": "https://github.com/search?q=",
+      "contexts": [
+        "selection"
+      ],
+      "id": 39,
+      "name": "GitHub",
+      "popup": true,
+      "type": "link"
+    },
+    {
+      "address": "https://www.douban.com/search?source=suggest&q=",
+      "contexts": [
+        "selection"
+      ],
+      "id": 58,
+      "name": "Douban",
+      "popup": true,
+      "type": "link"
+    },
+    {
+      "contexts": [
+        "selection"
+      ],
+      "id": 45,
+      "type": "separator"
+    },
+    {
+      "type": "link",
+      "name": "Google站内搜",
+      "address": "https://www.google.com/search?q=~$S$~+site:~$B$~",
+      "contexts": [
+        "page",
+        "selection"
+      ],
+      "id": 60,
+      "popup": true
+    },
+    {
+      "type": "link",
+      "name": "百度站内搜",
+      "address": "https://www.baidu.com/s?wd=~$S$~+site:~$B$~",
+      "contexts": [
+        "selection",
+        "page"
+      ],
+      "id": 61
+    }
+  ],
+  "sMenuLabel": "搜索「%s」",
+  "bShowPopup": true,
+  "iPopupMaxColumns": 6,
+  "iPopupIconSize": 21,
+  "bClosePopupOnClick": true,
+  "bClosePopupOnScroll": true,
+  "bClosePopupOnTimeout": true,
+  "iPopupCloseTimeout": 4,
+  "bShowAddSearchPage": true,
+  "bCopySelection": false,
+  "sOpenSearchIn": "opnt",
+  "oPlaceHolder": {
+    "domain": "~$D$~",
+    "keywords": "~$S$~",
+    "subdomain": "~$B$~",
+    "url": "~$U$~"
+  }
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "471bece3-61d6-411f-9841-fc05fe21f39a",
+    "name": "Gloria.Pub New Task",
+    "code": "fetch('https://api.gloria.pub/tasks?page=1')\n.then(res => res.json())\n.then(({ list }) => {\n  return list.map(task => {\n    return {\n      title: 'Gloria.Pub new task!'\n    , message: `${task.name} by ${task.author}`\n    , url: `https://gloria.pub/task/${task._id}`\n    }\n  })\n})\n.then(commit)\n",
+    "triggerInterval": 5,
+    "needInteraction": false,
+    "triggerCount": 124,
+    "pushCount": 0,
+    "isEnable": true,
+    "origin": "https://gloria.pub/task/57b9776481d810000f7d1ae5",
+    "triggerDate": "2019-06-27T17:28:32.966Z"
+  },
+  {
+    "id": "4cfb9a55-6b96-4b8f-a725-b8bde2cdab9e",
+    "name": "Github Trending today",
+    "code": "Promise.all([\n  importScripts('gloria-utils')\n, fetch('https://github.com/trending').then(res => res.text())\n])\n.then(([{ cheerio }, html]) => {\n  let $ = cheerio.load(html)\n  return $('.repo-list > li').map((i, el) => ({\n    title: $(el).find('h3').text().replace(/^\\s/g, '').replace(/\\s$/g, '').replace(/\\s{2,}/g, '')\n  , message: $(el).find('.py-1').text().replace(/^\\s/g, '').replace(/\\s$/g, '').replace(/\\s{2,}/g, '')\n  , url: 'https://github.com' + $(el).find('h3 a').attr('href')\n  , iconUrl: 'https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png'\n  })).get()\n})\n.then(commit)\n",
+    "triggerInterval": 5,
+    "needInteraction": false,
+    "triggerCount": 15,
+    "pushCount": 2,
+    "isEnable": true,
+    "origin": "https://gloria.pub/task/57dc17da33fc01000f57accb",
+    "triggerDate": "2019-06-27T17:28:32.966Z",
+    "pushDate": "2019-03-12T10:02:51.919Z"
+  },
+  {
+    "id": "854d885b-1462-4ac1-9c6f-d766d714b6a6",
+    "name": "V2EX 分享发现",
+    "code": "Promise.all([\n  importScripts('gloria-utils')\n, fetch('https://www.v2ex.com/go/share').then(res => res.text())\n])\n.then(([{ cheerio }, body]) => {\n  let $ = cheerio.load(body)\n  return $('#TopicsNode .cell').map((i, el) => {\n    return {\n      title: $(el).find('.item_title').text()\n    , iconUrl: 'https://' + $(el).find('img.avatar').attr('src')\n    , url: 'https://www.v2ex.com' + $(el).find('.item_title a').attr('href')\n    }\n  }).get()\n})\n.then(commit)",
+    "triggerInterval": 5,
+    "needInteraction": false,
+    "triggerCount": 2,
+    "pushCount": 0,
+    "isEnable": true,
+    "origin": "",
+    "triggerDate": "2019-06-27T17:29:27.158Z"
+  }
+]

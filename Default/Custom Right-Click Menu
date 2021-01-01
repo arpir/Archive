@@ -1,0 +1,842 @@
+{
+  "crm": [
+    {
+      "type": "menu",
+      "name": "工具箱",
+      "value": null,
+      "nodeInfo": {
+        "permissions": [],
+        "installDate": "2020/5/10",
+        "lastUpdatedAt": 1589059113030,
+        "version": "1.0",
+        "isRoot": false,
+        "source": "local"
+      },
+      "triggers": [],
+      "onContentTypes": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "children": [
+        {
+          "type": "link",
+          "name": "Table Convert Online ",
+          "value": [
+            {
+              "newTab": true,
+              "url": "https://tableconvert.com/"
+            }
+          ],
+          "nodeInfo": {
+            "permissions": [],
+            "installDate": "2020/5/10",
+            "lastUpdatedAt": 1589059154375,
+            "version": "1.0",
+            "isRoot": false,
+            "source": "local"
+          },
+          "triggers": [
+            {
+              "url": "*://*.example.com/*",
+              "not": false
+            }
+          ],
+          "onContentTypes": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "showOnSpecified": false
+        },
+        {
+          "type": "link",
+          "name": "文件格式转换",
+          "value": [
+            {
+              "newTab": true,
+              "url": "http://www.alltoall.net/"
+            }
+          ],
+          "nodeInfo": {
+            "permissions": [],
+            "installDate": "2020/5/10",
+            "lastUpdatedAt": 1589059191226,
+            "version": "1.0",
+            "isRoot": false,
+            "source": "local"
+          },
+          "triggers": [
+            {
+              "url": "*://*.example.com/*",
+              "not": false
+            }
+          ],
+          "onContentTypes": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "showOnSpecified": false
+        },
+        {
+          "type": "link",
+          "name": "代码转换",
+          "value": [
+            {
+              "newTab": true,
+              "url": "https://transform.tools/"
+            }
+          ],
+          "nodeInfo": {
+            "permissions": [],
+            "installDate": "2020/5/11",
+            "lastUpdatedAt": 1589136789356,
+            "version": "1.0",
+            "isRoot": false,
+            "source": "local"
+          },
+          "triggers": [
+            {
+              "url": "*://*.example.com/*",
+              "not": false
+            }
+          ],
+          "onContentTypes": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "showOnSpecified": false
+        },
+        {
+          "type": "link",
+          "name": "公众号MD编辑器",
+          "value": [
+            {
+              "newTab": true,
+              "url": "https://lab.lyric.im/wxformat/"
+            }
+          ],
+          "nodeInfo": {
+            "permissions": [],
+            "installDate": "2020/5/11",
+            "lastUpdatedAt": 1589146489376,
+            "version": "1.0",
+            "isRoot": false,
+            "source": "local"
+          },
+          "triggers": [
+            {
+              "url": "*://*.example.com/*",
+              "not": false
+            }
+          ],
+          "onContentTypes": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "showOnSpecified": false
+        },
+        {
+          "type": "link",
+          "name": "全历史",
+          "value": [
+            {
+              "newTab": true,
+              "url": "https://www.allhistory.com/"
+            }
+          ],
+          "nodeInfo": {
+            "permissions": [],
+            "installDate": "2020/5/11",
+            "lastUpdatedAt": 1589183391811,
+            "version": "1.0",
+            "isRoot": false,
+            "source": "local"
+          },
+          "triggers": [
+            {
+              "url": "*://*.example.com/*",
+              "not": false
+            }
+          ],
+          "onContentTypes": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "showOnSpecified": false
+        }
+      ]
+    },
+    {
+      "type": "menu",
+      "name": "视频书",
+      "value": null,
+      "nodeInfo": {
+        "permissions": [],
+        "installDate": "2020/5/10",
+        "lastUpdatedAt": 1589060024013,
+        "version": "1.0",
+        "isRoot": false,
+        "source": "local"
+      },
+      "triggers": [],
+      "onContentTypes": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "children": [
+        {
+          "type": "link",
+          "name": "Topbooks",
+          "value": [
+            {
+              "newTab": true,
+              "url": "https://topbook.cc"
+            }
+          ],
+          "nodeInfo": {
+            "permissions": [],
+            "installDate": "2020/5/10",
+            "lastUpdatedAt": 1589060105664,
+            "version": "1.0",
+            "isRoot": false,
+            "source": "local"
+          },
+          "triggers": [
+            {
+              "url": "*://*.example.com/*",
+              "not": false
+            }
+          ],
+          "onContentTypes": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "showOnSpecified": false
+        },
+        {
+          "type": "link",
+          "name": "HowCast",
+          "value": [
+            {
+              "newTab": true,
+              "url": "http://www.howcast.com"
+            }
+          ],
+          "nodeInfo": {
+            "permissions": [],
+            "installDate": "2020/5/10",
+            "lastUpdatedAt": 1589060251091,
+            "version": "1.0",
+            "isRoot": false,
+            "source": "local"
+          },
+          "triggers": [
+            {
+              "url": "*://*.example.com/*",
+              "not": false
+            }
+          ],
+          "onContentTypes": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "showOnSpecified": false
+        }
+      ]
+    },
+    {
+      "type": "menu",
+      "name": "发现",
+      "value": null,
+      "nodeInfo": {
+        "permissions": [],
+        "installDate": "2020/5/12",
+        "lastUpdatedAt": 1589223884043,
+        "version": "1.0",
+        "isRoot": false,
+        "source": "local"
+      },
+      "triggers": [],
+      "onContentTypes": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "children": [
+        {
+          "type": "link",
+          "name": "Hello Github",
+          "value": [
+            {
+              "newTab": true,
+              "url": "https://hellogithub.com/"
+            }
+          ],
+          "nodeInfo": {
+            "permissions": [],
+            "installDate": "2020/5/12",
+            "lastUpdatedAt": 1589223901068,
+            "version": "1.0",
+            "isRoot": false,
+            "source": "local"
+          },
+          "triggers": [
+            {
+              "url": "*://*.example.com/*",
+              "not": false
+            }
+          ],
+          "onContentTypes": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "showOnSpecified": false
+        },
+        {
+          "type": "link",
+          "name": "Producthunt",
+          "value": [
+            {
+              "newTab": true,
+              "url": "https://www.producthunt.com/"
+            }
+          ],
+          "nodeInfo": {
+            "permissions": [],
+            "installDate": "2020/5/12",
+            "lastUpdatedAt": 1589225001522,
+            "version": "1.0",
+            "isRoot": false,
+            "source": "local"
+          },
+          "triggers": [
+            {
+              "url": "*://*.example.com/*",
+              "not": false
+            }
+          ],
+          "onContentTypes": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "showOnSpecified": false
+        },
+        {
+          "type": "link",
+          "name": "Betalist",
+          "value": [
+            {
+              "newTab": true,
+              "url": "https://betalist.com/"
+            }
+          ],
+          "nodeInfo": {
+            "permissions": [],
+            "installDate": "2020/5/12",
+            "lastUpdatedAt": 1589225064841,
+            "version": "1.0",
+            "isRoot": false,
+            "source": "local"
+          },
+          "triggers": [
+            {
+              "url": "*://*.example.com/*",
+              "not": false
+            }
+          ],
+          "onContentTypes": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "showOnSpecified": false
+        },
+        {
+          "type": "link",
+          "name": "利器",
+          "value": [
+            {
+              "newTab": true,
+              "url": "https://liqi.io/"
+            }
+          ],
+          "nodeInfo": {
+            "permissions": [],
+            "installDate": "2020/5/12",
+            "lastUpdatedAt": 1589225844872,
+            "version": "1.0",
+            "isRoot": false,
+            "source": "local"
+          },
+          "triggers": [
+            {
+              "url": "*://*.example.com/*",
+              "not": false
+            }
+          ],
+          "onContentTypes": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "showOnSpecified": false
+        }
+      ]
+    },
+    {
+      "type": "menu",
+      "name": "产品",
+      "value": null,
+      "nodeInfo": {
+        "permissions": [],
+        "installDate": "2020/5/12",
+        "lastUpdatedAt": 1589225138310,
+        "version": "1.0",
+        "isRoot": false,
+        "source": "local"
+      },
+      "triggers": [],
+      "onContentTypes": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "children": [
+        {
+          "type": "link",
+          "name": "Thngs",
+          "value": [
+            {
+              "newTab": true,
+              "url": "https://thngs.co/"
+            }
+          ],
+          "nodeInfo": {
+            "permissions": [],
+            "installDate": "2020/5/12",
+            "lastUpdatedAt": 1589225180555,
+            "version": "1.0",
+            "isRoot": false,
+            "source": "local"
+          },
+          "triggers": [
+            {
+              "url": "*://*.example.com/*",
+              "not": false
+            }
+          ],
+          "onContentTypes": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "showOnSpecified": false
+        },
+        {
+          "type": "link",
+          "name": "Notcot",
+          "value": [
+            {
+              "newTab": true,
+              "url": "http://www.notcot.org/"
+            }
+          ],
+          "nodeInfo": {
+            "permissions": [],
+            "installDate": "2020/5/12",
+            "lastUpdatedAt": 1589225218165,
+            "version": "1.0",
+            "isRoot": false,
+            "source": "local"
+          },
+          "triggers": [
+            {
+              "url": "*://*.example.com/*",
+              "not": false
+            }
+          ],
+          "onContentTypes": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "showOnSpecified": false
+        }
+      ]
+    },
+    {
+      "type": "menu",
+      "name": "创意",
+      "value": null,
+      "nodeInfo": {
+        "permissions": [],
+        "installDate": "2020/5/12",
+        "lastUpdatedAt": 1589225422734,
+        "version": "1.0",
+        "isRoot": false,
+        "source": "local"
+      },
+      "triggers": [],
+      "onContentTypes": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "children": [
+        {
+          "type": "link",
+          "name": "Creative",
+          "value": [
+            {
+              "newTab": true,
+              "url": "https://www.creativeapplications.net/"
+            }
+          ],
+          "nodeInfo": {
+            "permissions": [],
+            "installDate": "2020/5/12",
+            "lastUpdatedAt": 1589225441133,
+            "version": "1.0",
+            "isRoot": false,
+            "source": "local"
+          },
+          "triggers": [
+            {
+              "url": "*://*.example.com/*",
+              "not": false
+            }
+          ],
+          "onContentTypes": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "showOnSpecified": false
+        },
+        {
+          "type": "link",
+          "name": "Vimeo",
+          "value": [
+            {
+              "newTab": true,
+              "url": "https://vimeo.com/watch"
+            }
+          ],
+          "nodeInfo": {
+            "permissions": [],
+            "installDate": "2020/5/12",
+            "lastUpdatedAt": 1589225516335,
+            "version": "1.0",
+            "isRoot": false,
+            "source": "local"
+          },
+          "triggers": [
+            {
+              "url": "*://*.example.com/*",
+              "not": false
+            }
+          ],
+          "onContentTypes": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "showOnSpecified": false
+        }
+      ]
+    },
+    {
+      "type": "menu",
+      "name": "灵感",
+      "value": null,
+      "nodeInfo": {
+        "permissions": [],
+        "installDate": "2020/5/12",
+        "lastUpdatedAt": 1589225797764,
+        "version": "1.0",
+        "isRoot": false,
+        "source": "local"
+      },
+      "triggers": [],
+      "onContentTypes": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "children": [
+        {
+          "type": "link",
+          "name": "awwwards",
+          "value": [
+            {
+              "newTab": true,
+              "url": "https://www.awwwards.com/"
+            }
+          ],
+          "nodeInfo": {
+            "permissions": [],
+            "installDate": "2020/5/12",
+            "lastUpdatedAt": 1589225813873,
+            "version": "1.0",
+            "isRoot": false,
+            "source": "local"
+          },
+          "triggers": [
+            {
+              "url": "*://*.example.com/*",
+              "not": false
+            }
+          ],
+          "onContentTypes": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "showOnSpecified": false
+        },
+        {
+          "type": "link",
+          "name": "artsy",
+          "value": [
+            {
+              "newTab": true,
+              "url": "https://www.artsy.net/"
+            }
+          ],
+          "nodeInfo": {
+            "permissions": [],
+            "installDate": "2020/5/12",
+            "lastUpdatedAt": 1589225825823,
+            "version": "1.0",
+            "isRoot": false,
+            "source": "local"
+          },
+          "triggers": [
+            {
+              "url": "*://*.example.com/*",
+              "not": false
+            }
+          ],
+          "onContentTypes": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "showOnSpecified": false
+        },
+        {
+          "type": "link",
+          "name": "bandcamp",
+          "value": [
+            {
+              "newTab": true,
+              "url": "https://bandcamp.com/"
+            }
+          ],
+          "nodeInfo": {
+            "permissions": [],
+            "installDate": "2020/5/12",
+            "lastUpdatedAt": 1589225828919,
+            "version": "1.0",
+            "isRoot": false,
+            "source": "local"
+          },
+          "triggers": [
+            {
+              "url": "*://*.example.com/*",
+              "not": false
+            }
+          ],
+          "onContentTypes": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "showOnSpecified": false
+        },
+        {
+          "type": "link",
+          "name": "ello",
+          "value": [
+            {
+              "newTab": true,
+              "url": "https://ello.co/discover"
+            }
+          ],
+          "nodeInfo": {
+            "permissions": [],
+            "installDate": "2020/5/12",
+            "lastUpdatedAt": 1589226139206,
+            "version": "1.0",
+            "isRoot": false,
+            "source": "local"
+          },
+          "triggers": [
+            {
+              "url": "*://*.example.com/*",
+              "not": false
+            }
+          ],
+          "onContentTypes": [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "showOnSpecified": false
+        }
+      ]
+    }
+  ],
+  "local": {
+    "CRMOnPage": false,
+    "authorName": "anonymous",
+    "catchErrors": true,
+    "editCRMInRM": true,
+    "editing": null,
+    "globalExcludes": [
+      ""
+    ],
+    "hideToolsRibbon": false,
+    "jsLintGlobals": [
+      "window",
+      "$",
+      "jQuery",
+      "crmAPI"
+    ],
+    "lastUpdatedAt": "2.2.12",
+    "libraries": [],
+    "notFirstTime": true,
+    "recoverUnsavedData": false,
+    "requestPermissions": [],
+    "resourceKeys": [],
+    "resources": {},
+    "selectedCrmType": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "settings": null,
+    "settingsVersionData": {
+      "current": {
+        "date": 1589226149626,
+        "hash": "a03e01ac8d3a6b59fef1fb60430566e2"
+      },
+      "latest": {
+        "date": 1589057023581,
+        "hash": "6d312e7f56012b2c6c467b3561379791"
+      },
+      "wasUpdated": false
+    },
+    "showOptions": true,
+    "shrinkTitleRibbon": false,
+    "updatedScripts": [],
+    "urlDataPairs": {},
+    "useAsUserscriptInstaller": true,
+    "useAsUserstylesInstaller": true,
+    "useStorageSync": true
+  },
+  "nonLocal": {
+    "editor": {
+      "keyBindings": {
+        "goToDef": "Alt-.",
+        "rename": "Ctrl-Q"
+      },
+      "cssUnderlineDisabled": false,
+      "disabledMetaDataHighlight": false,
+      "theme": "dark",
+      "zoom": "100"
+    },
+    "settingsLastUpdatedAt": 1589226149624,
+    "latestId": 51,
+    "rootName": "Custom Menu",
+    "nodeStorageSync": {}
+  }
+}
