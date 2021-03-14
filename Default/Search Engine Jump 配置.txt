@@ -1,0 +1,261 @@
+{
+  "status": 1,
+  "message": "$相关说明$(status: 这个在将来或许很重要)...(version: 若有新功能加入,靠这个版本号识别)...(addSearchItems: 允许更新时,添加新的搜索到你的搜索列表)...(modifySearchItems: 允许更新时,修改你的搜索列表中的项目)...(connectToTheServer: 允许连接到我的服务器(更新列表,将图标转换为base64等),将来更新使用或永不使用)...(closeBtn: 设置页面右上角的“关闭”圆圈是否显示。true显示,false隐藏)...(newtab: 新标签页打开。0为默认设置,1为新标签页打开)...(foldlist: 折叠当前搜索分类列表。true为折叠,false为展开。)...(settingOpacity: 设置按钮的透明度,值为0-1之间的数,0为透明,1为完全显示,中间值半透明。注：-1为直接关闭按钮,关闭之前请确定自己知道如何再次打开它)...(debug: debug模式,开启后,控制台会输出一些信息,“关闭并保存”按钮将不会在刷新页面)...(fixedTop: 将搜索栏固定到顶端。 true开启,false关闭)...(fixedTopUpward: 固定顶端后，搜索栏下拉不会出现，只有上拉时才出现。 true开启,false关闭)...(baiduOffset: 在百度页面鼠标划过的菜单会出现位移,若有使用其他的style样式,可以修改这个来修复二级菜单的偏移)...(getIcon: 自己添加搜索后获取图标的方式。0为自动，能连接谷歌的情况下用谷歌获取，无法连接的情况下，域名加favicon.ico获取；1为域名加favicon获取，2为使用谷歌获取，3为使用dnspot的服务获取(不建议使用)。或者添加网址，关键字使用%s代替，未测试)...(allOpen:一键搜索，点击相关分类后，打开该分类下的所有搜索)...(center:是否居中显示，主要是为了兼容脚本 ac 百度  ： 0 不居中，强制在左。 1, 强制居中 。 2,自动判断)...(engineDetails: 第一个值为分类列表标题名称,第二个值与enginelist相关联,必须匹配,第三个值true为显示列表,false为禁用列表。排列顺序与跳转栏上的显示顺序相同，可以用它将分类列表按自己喜欢排序)...(engineList: 各个搜索的相关信息)(rules: 将搜索样式插入到目标网页,同脚本中的rules设置相同,优先级高于脚本中自带的规则。自带了360搜索,可仿写)...",
+  "version": 4.03,
+  "addSearchItems": true,
+  "modifySearchItems": true,
+  "connectToTheServer": true,
+  "closeBtn": true,
+  "newtab": 1,
+  "foldlist": true,
+  "setBtnOpacity": "0.8",
+  "debug": false,
+  "fixedTop": true,
+  "fixedTopUpward": false,
+  "baiduOffset": -120,
+  "getIcon": 0,
+  "engineDetails": [
+    [
+      "搜索",
+      "user1610786856364",
+      true
+    ],
+    [
+      "应用",
+      "user1610787332581",
+      true
+    ],
+    [
+      "影音",
+      "user1610787446543",
+      true
+    ],
+    [
+      "代码",
+      "user1614136394714",
+      true
+    ],
+    [
+      "维基",
+      "user1615688678911",
+      true
+    ],
+    [
+      "问答",
+      "user1615688849761",
+      true
+    ],
+    [
+      "音乐",
+      "user1615688904539",
+      true
+    ]
+  ],
+  "engineList": {
+    "user1610786856364": [
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=www.google.com",
+        "name": "Google",
+        "url": "https://www.google.com/search?q=%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=www.baidu.com",
+        "name": "Baidu",
+        "url": "https://www.baidu.com/s?wd=%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=cn.bing.com",
+        "name": "Bing",
+        "url": "https://cn.bing.com/search?q=%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=www.sogou.com",
+        "name": "Sogou",
+        "url": "https://www.sogou.com/web?query=%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=www.so.com",
+        "name": "360搜索",
+        "url": "https://www.so.com/s?q=%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=search.yahoo.com",
+        "name": "Yahoo",
+        "url": "https://search.yahoo.com/search?p=%s ",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=yandex.com",
+        "name": "Yandex",
+        "url": "https://yandex.com/search/?text=%s",
+        "blank": "_blank"
+      }
+    ],
+    "user1610787332581": [
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=greasyfork.org",
+        "name": "Greasyfork",
+        "url": "https://greasyfork.org/en/scripts?q=%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=www.producthunt.com",
+        "name": "Producthunt",
+        "url": "https://www.producthunt.com/search?q=%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=chrome.google.com",
+        "name": "Chrome Extensions",
+        "url": "https://chrome.google.com/webstore/search/%s",
+        "blank": "_blank"
+      }
+    ],
+    "user1610787446543": [
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=www.pianku.li",
+        "name": "片库",
+        "url": "https://www.pianku.li/s/go.php?q=%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=cupfox.jackeriss.com",
+        "name": "茶杯狐",
+        "url": "https://cupfox.jackeriss.com/search?key=%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=ddrk.me",
+        "name": "低端影视",
+        "url": "https://ddrk.me/?post_type=post&s=%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=www.idybee.com",
+        "name": "电影蜜蜂",
+        "url": "https://www.idybee.com/?post_type=post&s=%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=www.youtube.com",
+        "name": "YouTube",
+        "url": "https://www.youtube.com/results?search_query=%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://search.bilibili.com/favicon.ico",
+        "name": "哔哩哔哩",
+        "url": "https://search.bilibili.com/all?keyword=%s",
+        "blank": "_blank"
+      }
+    ],
+    "user1614136394714": [
+      {
+        "favicon": "https://stackoverflow.com/favicon.ico",
+        "name": "Stackoverflow",
+        "url": "https://stackoverflow.com/search?q=%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=segmentfault.com",
+        "name": "Segmentfault",
+        "url": "https://segmentfault.com/search?q=%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=zzk.cnblogs.com",
+        "name": "博客园",
+        "url": "https://zzk.cnblogs.com/s?w=%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=juejin.im",
+        "name": "掘金",
+        "url": "https://juejin.im/search?query=%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=www.runoob.com",
+        "name": "菜鸟文档",
+        "url": "https://www.runoob.com/?s=%s",
+        "blank": "_blank"
+      }
+    ],
+    "user1615688678911": [
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=wikipedia.org",
+        "name": "维基百科",
+        "url": "http://wikipedia.org/w/index.php?search=%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=zh.moegirl.org.cn",
+        "name": "萌娘百科",
+        "url": "https://zh.moegirl.org.cn/index.php?search=%s",
+        "blank": "_blank"
+      }
+    ],
+    "user1615688849761": [
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=www.reddit.com",
+        "name": "Reddit",
+        "url": "https://www.reddit.com/search?q=%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=www.quora.com",
+        "name": "Quora",
+        "url": "https://www.quora.com/search?q=%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=www.zhihu.com",
+        "name": "知乎",
+        "url": "http://www.zhihu.com/search?q=%s",
+        "blank": "_blank"
+      }
+    ],
+    "user1615688904539": [
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=open.spotify.com",
+        "name": "Spotify",
+        "url": "https://open.spotify.com/search/%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=music.163.com",
+        "name": "网易云",
+        "url": "http://music.163.com/#/search/m/?s=%s",
+        "blank": "_blank"
+      },
+      {
+        "favicon": "https://www.google.com/s2/favicons?domain=www.last.fm",
+        "name": "Last.fm",
+        "url": "http://www.last.fm/search?q=%s",
+        "blank": "_blank"
+      }
+    ]
+  },
+  "rules": [
+    {
+      "name": "360",
+      "url": "/^https?:\\/\\/www\\.so\\.com\\/s\\?/",
+      "enabled": true,
+      "engineList": "web",
+      "fixedTop": 50,
+      "style": "padding: 10px 0 0 120px;margin-bottom:-10px;z-index:3001;",
+      "insertIntoDoc": {
+        "keyword": "//input[@name='q']",
+        "target": "css;#tabs-wrap",
+        "where": "afterEnd"
+      }
+    }
+  ],
+  "allOpen": false,
+  "center": 1
+}
